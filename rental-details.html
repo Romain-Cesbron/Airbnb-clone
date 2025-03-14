@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Details</title>
+    <link rel="stylesheet" href="rental-details.css">
+    
+    <!-- FullCalendar CSS (latest version) -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Manille Rental Apartment</div>
+            <ul>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="rental-details">
+        <div id="rental-detail">
+            <!-- Rental details will be populated here -->
+        </div>
+
+        <div class="availability">
+            <h2>Availability Calendar</h2>
+            <div id="calendar"></div>
+        </div>
+    </section>
+
+    <!-- FullCalendar JS (latest version) -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+
+    <script type="module" src="rental-details.js"></script>
+</body>
+</html>

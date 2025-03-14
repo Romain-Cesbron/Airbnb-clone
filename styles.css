@@ -1,0 +1,216 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background: white;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff385c;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 120px;
+}
+
+.category:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.category img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+}
+
+.listings {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#rental-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.rental-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.rental-item img {
+    width: 100%;
+    height: 200px;  /* Adjust as necessary */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.rental-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+.rental-details {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.rental-details img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.rental-details h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* rental-details CSS */
+.rental-details {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.rental-details h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.rental-image {
+    max-width: 100%;
+    max-height: 500px;  /* Adjust as necessary */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.amenities ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.amenities li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.description-price {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.description, .price {
+    width: 48%;
+}
+
+.description h3, .price h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.price p {
+    font-size: 22px;
+    color: #ff385c;
+    font-weight: bold;
+}
+
+
+h2, h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center; /* Center the headings */
+}
+
+/* Description and calendar section */
+.description-calendar {
+    margin-top: 30px;  /* Adds space between the description and calendar */
+    text-align: center; /* Center align the content */
+}
+
+#rental-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Calendar styling */
+#calendar {
+    max-width: 40%; /* Keep it at 40% width */
+    height: 400px;  /* Set the calendar height */
+    margin: 20px auto; /* Centers the calendar horizontally */
+    border: 1px solid #ccc; /* Optional: Adds border to calendar */
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    #calendar {
+        height: 300px;
+        max-width: 80%;  /* Increase the calendar width on smaller screens */
+    }
+}
+
